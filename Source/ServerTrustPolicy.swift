@@ -117,6 +117,7 @@ public enum ServerTrustPolicy {
     case performRevokedEvaluation(validateHost: Bool, revocationFlags: CFOptionFlags)
     case pinCertificates(certificates: [SecCertificate], validateCertificateChain: Bool, validateHost: Bool)
     case pinPublicKeys(publicKeys: [SecKey], validateCertificateChain: Bool, validateHost: Bool)
+    case pinSPKIFingerprint(spkiFingerprints: [String], validateCertificateChain: Bool, validateHost: Bool)
     case disableEvaluation
     case customEvaluation((_ serverTrust: SecTrust, _ host: String) -> Bool)
 
@@ -228,6 +229,37 @@ public enum ServerTrustPolicy {
                     }
                 }
             }
+        case let .pinSPKIFingerprint(spkiFingerprints, validateCertificateChain, validateHost):
+            var certificateChainEvaluationPassed = true
+            
+            if validateCertificateChain {
+                let policy = SecPolicyCreateSSL(true, validateHost ? host as CFString : nil)
+                SecTrustSetPolicies(serverTrust, policy)
+                
+                certificateChainEvaluationPassed = trustIsValid(serverTrust)
+            }
+            
+            if certificateChainEvaluationPassed {
+                
+                if SecTrustGetCertificateCount(serverTrust) > 0 {
+                    
+                    let leafCert = SecTrustGetCertificateAtIndex(serverTrust, 0)!
+                    
+                    if let spki = leafCert.spki {
+                        
+                        let leafFingerprint = Crypto.sha256(spki).base64EncodedString()
+                        
+                        for pinnedFingerprint in spkiFingerprints {
+                            
+                            if leafFingerprint.compare(pinnedFingerprint) == .orderedSame {
+                                serverTrustIsValid = true
+                                break
+                            }
+                        }
+                    }
+                }
+            }
+            
         case .disableEvaluation:
             serverTrustIsValid = true
         case let .customEvaluation(closure):

@@ -1,5 +1,5 @@
 //
-//  Alamofire.h
+//  DispatchQueue+Alamofire.swift
 //
 //  Copyright (c) 2014-2017 Alamofire Software Foundation (http://alamofire.org/)
 //
@@ -22,9 +22,10 @@
 //  THE SOFTWARE.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
-FOUNDATION_EXPORT double AlamofireVersionNumber;
-FOUNDATION_EXPORT const unsigned char AlamofireVersionString[];
+@interface Crypto : NSObject
 
-#import <Alamofire/Crypto.h>
++ (NSData *)sha256:(NSData *)input;
+
+@end

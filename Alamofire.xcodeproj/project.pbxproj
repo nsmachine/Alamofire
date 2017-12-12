@@ -229,6 +229,18 @@
 		4DD67C241A5C58FB00ED2280 /* Alamofire.h in Headers */ = {isa = PBXBuildFile; fileRef = F8111E3819A95C8B0040E7D1 /* Alamofire.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DD67C251A5C590000ED2280 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F897FF4019AA800700AB5182 /* Alamofire.swift */; };
 		8035DB621BAB492500466CB3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8111E3319A95C8B0040E7D1 /* Alamofire.framework */; };
+		B146D0371FDEE167008ACF9E /* SecCertificate+SPKI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B146D0361FDEE167008ACF9E /* SecCertificate+SPKI.swift */; };
+		B146D0381FDEE167008ACF9E /* SecCertificate+SPKI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B146D0361FDEE167008ACF9E /* SecCertificate+SPKI.swift */; };
+		B146D0391FDEE167008ACF9E /* SecCertificate+SPKI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B146D0361FDEE167008ACF9E /* SecCertificate+SPKI.swift */; };
+		B146D03A1FDEE167008ACF9E /* SecCertificate+SPKI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B146D0361FDEE167008ACF9E /* SecCertificate+SPKI.swift */; };
+		B146D03D1FDEE7E8008ACF9E /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = B146D03B1FDEE7E8008ACF9E /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B146D03E1FDEE7E8008ACF9E /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = B146D03B1FDEE7E8008ACF9E /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B146D03F1FDEE7E8008ACF9E /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = B146D03B1FDEE7E8008ACF9E /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B146D0401FDEE7E8008ACF9E /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = B146D03B1FDEE7E8008ACF9E /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B146D0411FDEE7E8008ACF9E /* Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = B146D03C1FDEE7E8008ACF9E /* Crypto.m */; };
+		B146D0421FDEE7E8008ACF9E /* Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = B146D03C1FDEE7E8008ACF9E /* Crypto.m */; };
+		B146D0431FDEE7E8008ACF9E /* Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = B146D03C1FDEE7E8008ACF9E /* Crypto.m */; };
+		B146D0441FDEE7E8008ACF9E /* Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = B146D03C1FDEE7E8008ACF9E /* Crypto.m */; };
 		E4202FD01B667AA100C997FB /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2724E1AF88FB500F1D59A /* ParameterEncoding.swift */; };
 		E4202FD11B667AA100C997FB /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE2C391AF899EC00BABAE5 /* Request.swift */; };
 		E4202FD21B667AA100C997FB /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE2C451AF89FF300BABAE5 /* ResponseSerialization.swift */; };
@@ -357,6 +369,9 @@
 		4CFCFE381D56E8D900A76388 /* TaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
 		4DD67C0B1A5C55C900ED2280 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72998D721BF26173006D3F69 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		B146D0361FDEE167008ACF9E /* SecCertificate+SPKI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SecCertificate+SPKI.swift"; sourceTree = "<group>"; };
+		B146D03B1FDEE7E8008ACF9E /* Crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Crypto.h; sourceTree = "<group>"; };
+		B146D03C1FDEE7E8008ACF9E /* Crypto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Crypto.m; sourceTree = "<group>"; };
 		B39E2F831C1A72F8002DA1A9 /* certDER.cer */ = {isa = PBXFileReference; lastKnownFileType = file; name = certDER.cer; path = selfSignedAndMalformedCerts/certDER.cer; sourceTree = "<group>"; };
 		B39E2F841C1A72F8002DA1A9 /* certDER.crt */ = {isa = PBXFileReference; lastKnownFileType = file; name = certDER.crt; path = selfSignedAndMalformedCerts/certDER.crt; sourceTree = "<group>"; };
 		B39E2F851C1A72F8002DA1A9 /* certDER.der */ = {isa = PBXFileReference; lastKnownFileType = file; name = certDER.der; path = selfSignedAndMalformedCerts/certDER.der; sourceTree = "<group>"; };
@@ -554,6 +569,9 @@
 			isa = PBXGroup;
 			children = (
 				4C43669A1D7BB93D00C38AAD /* DispatchQueue+Alamofire.swift */,
+				B146D0361FDEE167008ACF9E /* SecCertificate+SPKI.swift */,
+				B146D03B1FDEE7E8008ACF9E /* Crypto.h */,
+				B146D03C1FDEE7E8008ACF9E /* Crypto.m */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -787,6 +805,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF627061BA7CBE30011A099 /* Alamofire.h in Headers */,
+				B146D03F1FDEE7E8008ACF9E /* Crypto.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -795,6 +814,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DD67C241A5C58FB00ED2280 /* Alamofire.h in Headers */,
+				B146D03E1FDEE7E8008ACF9E /* Crypto.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,6 +823,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CEC605C1B745C9B00E684F4 /* Alamofire.h in Headers */,
+				B146D0401FDEE7E8008ACF9E /* Crypto.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -811,6 +832,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8111E3919A95C8B0040E7D1 /* Alamofire.h in Headers */,
+				B146D03D1FDEE7E8008ACF9E /* Crypto.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -958,7 +980,7 @@
 					};
 					4CF626EE1BA7CB3E0011A099 = {
 						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0920;
 					};
 					4CF626F71BA7CB3E0011A099 = {
 						CreatedOnToolsVersion = 7.1;
@@ -966,15 +988,15 @@
 					};
 					4DD67C0A1A5C55C900ED2280 = {
 						CreatedOnToolsVersion = 6.1.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Manual;
 					};
 					E4202FCD1B667AA100C997FB = {
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0920;
 					};
 					F8111E3219A95C8B0040E7D1 = {
 						CreatedOnToolsVersion = 6.0;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0920;
 					};
 					F8111E3D19A95C8B0040E7D1 = {
 						CreatedOnToolsVersion = 6.0;
@@ -1188,9 +1210,11 @@
 			files = (
 				4C574E6C1C67D207000B3128 /* Timeline.swift in Sources */,
 				4CFCFE301D56D31700A76388 /* SessionDelegate.swift in Sources */,
+				B146D0391FDEE167008ACF9E /* SecCertificate+SPKI.swift in Sources */,
 				4CF6270C1BA7CBF60011A099 /* Result.swift in Sources */,
 				4CF627081BA7CBF60011A099 /* AFError.swift in Sources */,
 				4CF627131BA7CBF60011A099 /* Validation.swift in Sources */,
+				B146D0431FDEE7E8008ACF9E /* Crypto.m in Sources */,
 				4CF6270E1BA7CBF60011A099 /* MultipartFormData.swift in Sources */,
 				4C80F9F81BB730EF001B46D2 /* Response.swift in Sources */,
 				4CB9282B1C66BFBC00CE5F08 /* Notifications.swift in Sources */,
@@ -1239,9 +1263,11 @@
 			files = (
 				4C574E6B1C67D207000B3128 /* Timeline.swift in Sources */,
 				4CFCFE2F1D56D31700A76388 /* SessionDelegate.swift in Sources */,
+				B146D0381FDEE167008ACF9E /* SecCertificate+SPKI.swift in Sources */,
 				4CE272501AF88FB500F1D59A /* ParameterEncoding.swift in Sources */,
 				4CDE2C3B1AF899EC00BABAE5 /* Request.swift in Sources */,
 				4CDE2C471AF89FF300BABAE5 /* ResponseSerialization.swift in Sources */,
+				B146D0421FDEE7E8008ACF9E /* Crypto.m in Sources */,
 				4C1DC8551B68908E00476DE3 /* AFError.swift in Sources */,
 				4CDE2C381AF8932A00BABAE5 /* SessionManager.swift in Sources */,
 				4C0B62521BB1001C009302D3 /* Response.swift in Sources */,
@@ -1263,9 +1289,11 @@
 			files = (
 				4C574E6D1C67D207000B3128 /* Timeline.swift in Sources */,
 				4CEE82AD1C6813CF00E9C9F0 /* NetworkReachabilityManager.swift in Sources */,
+				B146D03A1FDEE167008ACF9E /* SecCertificate+SPKI.swift in Sources */,
 				4CFCFE311D56D31700A76388 /* SessionDelegate.swift in Sources */,
 				E4202FD01B667AA100C997FB /* ParameterEncoding.swift in Sources */,
 				E4202FD11B667AA100C997FB /* Request.swift in Sources */,
+				B146D0441FDEE7E8008ACF9E /* Crypto.m in Sources */,
 				4CEC605A1B745C9100E684F4 /* AFError.swift in Sources */,
 				E4202FD21B667AA100C997FB /* ResponseSerialization.swift in Sources */,
 				E4202FD31B667AA100C997FB /* SessionManager.swift in Sources */,
@@ -1287,9 +1315,11 @@
 			files = (
 				4C574E6A1C67D207000B3128 /* Timeline.swift in Sources */,
 				4CFCFE2E1D56D31700A76388 /* SessionDelegate.swift in Sources */,
+				B146D0371FDEE167008ACF9E /* SecCertificate+SPKI.swift in Sources */,
 				4CE2724F1AF88FB500F1D59A /* ParameterEncoding.swift in Sources */,
 				4CDE2C3A1AF899EC00BABAE5 /* Request.swift in Sources */,
 				4CDE2C461AF89FF300BABAE5 /* ResponseSerialization.swift in Sources */,
+				B146D0411FDEE7E8008ACF9E /* Crypto.m in Sources */,
 				4C1DC8541B68908E00476DE3 /* AFError.swift in Sources */,
 				4CDE2C371AF8932A00BABAE5 /* SessionManager.swift in Sources */,
 				4C0B62511BB1001C009302D3 /* Response.swift in Sources */,
@@ -1397,6 +1427,7 @@
 		4CF627001BA7CB3E0011A099 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1409,6 +1440,8 @@
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
@@ -1416,6 +1449,7 @@
 		4CF627011BA7CB3E0011A099 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1428,6 +1462,7 @@
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
@@ -1459,6 +1494,7 @@
 		4DD67C1F1A5C55C900ED2280 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1472,12 +1508,15 @@
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		4DD67C201A5C55C900ED2280 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1491,12 +1530,14 @@
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		E4202FDE1B667AA100C997FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1509,6 +1550,8 @@
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Debug;
@@ -1516,6 +1559,7 @@
 		E4202FDF1B667AA100C997FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1528,6 +1572,7 @@
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Release;
@@ -1658,6 +1703,7 @@
 		F8111E4719A95C8B0040E7D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1670,12 +1716,15 @@
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		F8111E4819A95C8B0040E7D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1688,6 +1737,7 @@
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -1210,6 +1210,27 @@ class ServerTrustPolicyPinCertificatesTestCase: ServerTrustPolicyTestCase {
     }
 }
 
+class ServerTrustPolicyPinSPKIFingerprintTestCase: ServerTrustPolicyTestCase {
+    
+    func testThatPinningLeafCertificateFingerprintPassesEvaluationWithoutHostValidation() {
+        
+        let host = "test.alamofire.org"
+        let serverTrust = TestTrusts.leafValidDNSName.trust
+        let serverTrustPolicy = ServerTrustPolicy.pinSPKIFingerprint(
+            spkiFingerprints: ["tW/0nr4+I+ugTkHNsTrtmYhavrOLTnKYpEe0x4U3zRE="],
+            validateCertificateChain: true,
+            validateHost: false
+        )
+        
+        // When
+        setRootCertificateAsLoneAnchorCertificateForTrust(serverTrust)
+        let serverTrustIsValid = serverTrustPolicy.evaluate(serverTrust, forHost: host)
+        
+        // Then
+        XCTAssertTrue(serverTrustIsValid, "server trust should pass evaluation")
+    }
+}
+
 // MARK: -
 
 class ServerTrustPolicyPinPublicKeysTestCase: ServerTrustPolicyTestCase {

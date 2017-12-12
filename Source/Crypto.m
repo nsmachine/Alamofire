@@ -1,5 +1,5 @@
 //
-//  Alamofire.h
+//  DispatchQueue+Alamofire.swift
 //
 //  Copyright (c) 2014-2017 Alamofire Software Foundation (http://alamofire.org/)
 //
@@ -22,9 +22,18 @@
 //  THE SOFTWARE.
 //
 
-@import Foundation;
+#import "Crypto.h"
 
-FOUNDATION_EXPORT double AlamofireVersionNumber;
-FOUNDATION_EXPORT const unsigned char AlamofireVersionString[];
+#import <CommonCrypto/CommonCrypto.h>
 
-#import <Alamofire/Crypto.h>
+@implementation Crypto
+
++ (NSData *)sha256:(NSData *)input {
+    
+    unsigned char result[CC_SHA256_DIGEST_LENGTH];
+    CC_SHA256([input bytes], (CC_LONG)[input length], result);
+    
+    return [NSData dataWithBytes:result length:CC_SHA256_DIGEST_LENGTH];
+}
+
+@end
